@@ -1,23 +1,26 @@
+<center>
 <nav>
-  <!--#做選單用的-->
-  {{ title }}
-  <!--兩個大括弧用法: 自動內插資料。 (放屬性名稱，所以在TS檔裡面的title就會放在這)-->
+  <h1>{{ title }}</h1>
 </nav>
+</center>
 
+<div>
+  <center>
+  <section>
+    <div>
+      <!--/assets為固定路徑，不能更改-->
+      <div>
+        <h1>{{author}}</h1>
+      </div>
+      <img [src]=" '/assets/images/' + myfile "  width="250"/>
+      <div>
+        <p>我的寵物 : {{petName}} {{nickname}}</p>
+      </div>
+      <img [src]=" '/assets/images/' + petfile " width="250"/>
+    </div>
+  </section>
+  </center>
 
-<section>
-  <!--#製作下拉選單用的-->
-  <select (change)="itemSelected($event)">
-    <!--#選單裡面的選項用'option'製作-->
-    <option *ngFor="let item of units">
-      <!--'*ngFor'在這個地方做For迴圈的動作(let ... of ... == for ... in ...)-->
-      {{ item }}
-      <!--{{item}}就會顯示ts檔中的'units'內容-->
-    </option>
-    
-  </select>
-
-</section>
-
+</div>
 
 <router-outlet></router-outlet>

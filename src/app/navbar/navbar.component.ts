@@ -8,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 
 export class NavbarComponent implements OnInit {
 
-  title = '教士會館';
-  menu = ['首頁', '特色餐點', '營業項目', '交通資訊'];
-  logo = '/assets/images/logo.jpg';
+  title = '多多教教主多多';
+  menu = ['首頁', '生活點滴', '基本資料', '奴才資訊'];
+  logo = '/assets/images/house_icon_white.png';
 
   constructor() { }
   // 元件執行的涵式

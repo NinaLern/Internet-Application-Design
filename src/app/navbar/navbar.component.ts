@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
+export class Menu {
+  href: string;
+  name: string;
+}
+
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -8,9 +13,15 @@ import { Component, OnInit } from '@angular/core';
 
 export class NavbarComponent implements OnInit {
 
-  title = '多多教教主多多';
-  menu = ['首頁', '生活點滴', '基本資料', '奴才資訊'];
-  logo = '/assets/images/house_icon_white.png';
+  title = '多多教教主: 多多 ♫ ～';
+  // menu: Menu[] = [
+  //   { href: './jumbo.component.css', name: '首頁' },
+  //   { href: './product.component.css', name: '基本資料' },
+  //   { href: './hero.component.css', name: '寫真專區' },
+  //   { href: './feature.component.css', name: '生活點滴' },
+  // ];
+  logo = '/assets/images/dogLogo.png';
+  menu = ['首頁', '基本資料', '寫真專區', '生活點滴'];
 
   constructor() { }
   // 元件執行的涵式

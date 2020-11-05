@@ -1,8 +1,8 @@
-<nav class="navbar navbar-expand-sm bg-dark">
+<nav class="navbar navbar-expand-sm navbar-light" style="background-color: #fae994;">
     <div class="container">
       <div class="navbar-brand">
         <span class=""><img src="{{ logo }} "></span>
-        <span class="text-white display-title">
+        <span class="text-dark display-title">
           {{title}}
         </span>
       </div>
@@ -12,12 +12,16 @@
   
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item mr-5 display-5 dropdown" *ngFor="let menuitem of menu">
-            <a href="#" class="text-white nav-link">{{menuitem}}</a>
+          <!-- <a  *ngFor="let hrefitem of herf" href={{hrefitem}} class="text-white nav-link"> -->
+          <li class="nav-item mr-5 display-5 dropdown" *ngFor="let menuitem of menu" >
+            <a  href='#' class="text-dark nav-link">
+              {{menuitem}}
+            </a>
           </li>
+          <!-- </a> -->
         </ul>
-        <button class="btn btn-lg btn-outline-warning">
-          我要入會
+        <button class="btn btn-lg btn-outline-secondary">
+          我要入教
         </button>
       </div>
     </div>

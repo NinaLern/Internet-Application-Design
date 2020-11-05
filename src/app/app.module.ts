@@ -9,6 +9,7 @@ import { JumboComponent } from './jumbo/jumbo.component';
 import { FeatureComponent } from './feature/feature.component';
 import { ProductComponent } from './product/product.component';
 import { ContactComponent } from './contact/contact.component';
+import { HeroComponent } from './hero/hero.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ContactComponent } from './contact/contact.component';
     JumboComponent,
     FeatureComponent,
     ProductComponent,
-    ContactComponent
+    ContactComponent,
+    HeroComponent
   ],
   imports: [
     BrowserModule,

@@ -14,8 +14,8 @@
         <ul class="navbar-nav ml-auto">
           <!-- <a  *ngFor="let hrefitem of herf" href={{hrefitem}} class="text-white nav-link"> -->
           <li class="nav-item mr-5 display-5 dropdown" *ngFor="let menuitem of menu" >
-            <a  href='#' class="text-dark nav-link">
-              {{menuitem}}
+            <a  href={{menuitem.url}} class="text-dark nav-link">
+              {{menuitem.title}}
             </a>
           </li>
           <!-- </a> -->

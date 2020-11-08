@@ -21,7 +21,13 @@ export class NavbarComponent implements OnInit {
   //   { href: './feature.component.css', name: '生活點滴' },
   // ];
   logo = '/assets/images/dogLogo.png';
-  menu = ['首頁', '基本資料', '寫真專區', '生活點滴'];
+  // 加入段落id
+  menu = [
+  { title: "首頁", url: "#"},
+  { title: "基本資料", url: '#product-section'},
+  { title: "寫真專區", url: '#hero-section'},
+  { title: "生活點滴", url: '#feature-section'}
+];
 
   constructor() { }
   // 元件執行的涵式

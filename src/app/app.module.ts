@@ -10,6 +10,7 @@ import { FeatureComponent } from './feature/feature.component';
 import { ProductComponent } from './product/product.component';
 import { ContactComponent } from './contact/contact.component';
 import { HeroComponent } from './hero/hero.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HeroComponent } from './hero/hero.component';
     FeatureComponent,
     ProductComponent,
     ContactComponent,
-    HeroComponent
+    HeroComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
